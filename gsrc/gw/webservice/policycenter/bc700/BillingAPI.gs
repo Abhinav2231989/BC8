@@ -154,7 +154,7 @@ class BillingAPI {
    * @param accountNumber the account number to search for
    * @return true if account exists
    */
-  @Throws(SOAPServerException, "If communication error or any other problem occurs.")
+  @Throws(SOAPServerException, "If commuanication error or any other problem occurs.")
   @Throws(RequiredFieldException, "If required parameter is missing.")
   function isAccountExist(accountNumber : String) : boolean {
     require(accountNumber, "accountNumber")
