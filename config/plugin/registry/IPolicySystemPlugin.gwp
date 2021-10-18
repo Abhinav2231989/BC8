@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<plugin
+  interface="IPolicySystemPlugin"
+  name="IPolicySystemPlugin">
+  <plugin-gosu
+    gosuclass="gw.plugin.pas.pc800.PCPolicySystemPlugin">
+    <param
+      name="password"
+      value="gw"/>
+    <param
+      name="username"
+      value="su"/>
+  </plugin-gosu>
+</plugin>
