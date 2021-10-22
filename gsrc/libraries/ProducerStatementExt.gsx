@@ -139,6 +139,7 @@ enhancement ProducerStatementExt : entity.ProducerStatement {
   }
 
   private property get TransactionsWithoutItemEventsQuery() : Query<PolicyCmsnPayable> {
+
     var transactions = Query.make(PolicyCmsnPayable)
     transactions.subselect("ID", CompareNotIn, Query.make(ItemEvent), "Transaction")
     transactions.join(ProducerContext.Type, "Transaction")
